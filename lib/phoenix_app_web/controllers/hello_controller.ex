@@ -6,6 +6,6 @@ defmodule PhoenixAppWeb.HelloController do
   end
 
   def show(conn, %{"messenger" => messenger}) do
-    render conn, "show.json", messenger: messenger
+    render conn, "show.html", message: messenger
   end
 end
